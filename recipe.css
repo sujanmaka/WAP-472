@@ -14,6 +14,7 @@ h2 {
 
 body {
     background: white;
+    background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
     text-decoration-color: #404040;
     font-size: 11pt;
     font-family: Georgia, serif;
@@ -59,4 +60,16 @@ body {
 .quotation {
     background-color: #FFFFA8;
     font-style: italic;
+}
+
+a {
+    color: #A4A400;
+}
+
+.innerbox
+{
+   width:265px;
+   display: inline-block;
+   text-align: right;
+    opacity: 0.7;
 }
