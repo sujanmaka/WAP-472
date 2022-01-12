@@ -1,0 +1,62 @@
+h2 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: 'Lucida Sans Unicode', Arial, Helvetica, Arial, sans-serif;
+    font-size: 18pt;
+    text-decoration: underline;
+}
+
+.main_header {
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+body {
+    background: white;
+    text-decoration-color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, serif;
+}
+
+.links {
+    color: #A4A400;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.image_desc {
+    width: 220pt;
+    height: 220pt;
+}
+
+.bullet_less {
+    margin-left: 0px;
+    list-style-type:none;
+}
+
+.quotation {
+    background-color: #FFFFA8;
+    font-style: italic;
+}
