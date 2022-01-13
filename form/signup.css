@@ -1,0 +1,17 @@
+fieldset {
+	background-color: gray;
+}
+
+legend {
+	border: 10px;
+	background-color: white;
+	font-size: 10px;
+}
+
+.button1 {
+	background-color: red;
+}
+
+.container {
+  width: 500px;
+}

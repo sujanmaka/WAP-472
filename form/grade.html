@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Grades</title>
+</head>
+
+<body>
+    <h1>Retrieve your grade</h1>
+    <form action="http://mumstudents.org/params.php" method="post">
+        <div>
+            Name: <input type="text" name="name"/> <br/>
+            Id: <input type="text" name="studentid" /> <br/>
+            Choose assignment: 
+            <select name="assignment">
+                <option>Moview Review Assignment</option>
+                <option>Recipe Assignment</option>
+                <option selected>Daily Notes</option>
+                <option>Alpha Gama Scenes</option>
+                </select>
+              <br/>
+              Student's entry:<br>
+  <input type="radio" id="feb" name="intake" value="Feb">
+  <label for="feb">Feburary</label><br>
+  <input type="radio" id="march" name="intake" value="March">
+  <label for="march">March</label><br>
+  <input type="radio" id="nov" name="intkae" value="Nov">
+  <label for="nov">Nov</label><br><br>
+<input type="checkbox" name="agree" /> I acknowlege all the above provided info. <br>
+
+            <input type="submit" value="Get Grade" />
+        </div>
+
+    </form>
+
+
+</body>
+
+</html>
