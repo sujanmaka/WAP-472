@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link href="signup.css" type="text/css" rel="stylesheet">
-
-    <title>Sign Up</title>
-</head>
-
-<body>
-    
-        <div class="container">
-<fieldset>
-    <legend><h1>New User Signup:</h1></legend>
-    <form action="http://mumstudents.org/params.php" method="post">
-
-            <label class="test">Name:</label> <input type="text" name="name" size="16" /> <br/>
-            <label class="test">Gender:</label> <label><input type="radio" name="gender" value="MALE"> Male </label>
-            <label><input type="radio" name="gender" value="FEMALE" checked>Female</label><br>
-            <label class="test">Age:</label> <input type="text" name="age" size="6" max="2" /> <br/>
-            Personality Type: <input type="text" name="personalitytype" size="6" max="4" /> (Don't know your type?)<br/>
-
-            Favorite OS: 
-            <select name="os">
-                <option selected>Windows</option>
-                <option>Mac OS X</option>
-                <option>Linux</option>
-                </select>
-              <br/>
-              Seeking age: <input type="text" name="minage" placeholder="min" size="6" max="2"> to <input type="text" name="maxage" placeholder="max" size="6" max="2">
-
-              <br>
-
-            <input class="button1" type="submit" value="Sign Up"/>
-        </div>
-
-    </form>
-    </fieldset>
-
-
-</body>
-
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="signup.css" type="text/css" rel="stylesheet">
+      <title>Sign Up</title>
+   </head>
+   <body>
+      <div class="container">
+         <fieldset>
+            <legend>
+               New User Signup:
+            </legend>
+            <form action="http://mumstudents.org/params.php" method="post">
+               <div class="grid-container">
+                  <div class="grid-item bold-item">Name:</div>
+                  <div class="grid-item"><input type="text" name="name" size="16" /></div>
+                  <div class="grid-item bold-item">Gender:</div>
+                  <div class="grid-item"><label><input type="radio" name="gender" value="MALE"> Male </label>
+                     <label><input type="radio" name="gender" value="FEMALE" checked>Female</label>
+                  </div>
+                  <div class="grid-item bold-item">Age:</div>
+                  <div class="grid-item"><input type="text" name="age" size="6" maxlength="2"/></div>
+                  <div class="grid-item bold-item">Personality Type:</div>
+                  <div class="grid-item"><input type="text" name="personalitytype" size="6" maxlength="4" /> (<span class="paragraph">Don't know your type?</span>)</div>
+                  <div class="grid-item bold-item">Favorite OS:</div>
+                  <div class="grid-item">
+                     <select name="os">
+                        <option selected>Windows</option>
+                        <option>Mac OS X</option>
+                        <option>Linux</option>
+                     </select>
+                  </div>
+                  <div class="grid-item bold-item">Seeking age:</div>
+                  <div class="grid-item"><input type="text" name="minage" placeholder="min" size="6" maxlength="2"> to <input type="text" name="maxage" placeholder="max" size="6" maxlength="2"></div>
+               </div>
+               <input class="button1 bold-item" type="submit" value="Sign Up"/>   
+            </form>
+         </fieldset>
+      </div>
+   </body>
 </html>

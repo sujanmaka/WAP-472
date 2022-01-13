@@ -1,17 +1,37 @@
 fieldset {
-	background-color: gray;
+	background-color: #dce8e8;
 }
 
-legend {
-	border: 10px;
-	background-color: white;
-	font-size: 10px;
-}
+legend {  
+                display: block; 
+                border: 1px solid black;
+                text-shadow: 10%; 
+                color:black;
+                background-color: white;
+                opacity: 80%; 
+            } 
 
 .button1 {
-	background-color: red;
+	background-color: #eb8a8a;
 }
 
 .container {
-  width: 500px;
+	width: 500px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-item {
+  font-size: 15px;
+}
+
+.bold-item {
+	font-weight: bold;
+}
+
+.paragraph {
+	color: #eb8a8a;	
 }
