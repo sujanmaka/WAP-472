@@ -4,8 +4,8 @@
     function calcTip() {
 
         // Enter your code here to make Tip Calculator work
-        document.getElementById("total").innerHTML = document.getElementById("tip").value *
-            document.getElementById("subtotal").value / 100;
+        document.getElementById("total").innerHTML = parseInt(document.getElementById("subtotal").value) + (document.getElementById("tip").value *
+            document.getElementById("subtotal").value / 100);
 
     }
 </script>
