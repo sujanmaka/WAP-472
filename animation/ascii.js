@@ -21,18 +21,21 @@ export function start() {
     let selectedItem = document.getElementById('item');
     let item = selectedItem.options[selectedItem.selectedIndex].value;
 
-    let contents = ANIMATIONS[item].split("=====\n");
+    //split the content into contents array
+    const contents = ANIMATIONS[item].split("=====\n");
 
     let selectedSize = document.getElementById('itemSize');
     let size = selectedSize.options[selectedSize.selectedIndex].value;
     document.getElementById("screen").style.fontSize = size;
 
-    if (item == "CUSTOM") {
-        contents = [document.getElementById("screen").innerHTML,
-            document.getElementById("screen").innerHTML.toUpperCase,
-            document.getElementById("screen").innerHTML.toLowerCase
-        ];
-    }
+    //animation logic for CUSTOM
+    // if (item == "CUSTOM") {
+    //     let content = document.getElementById("screen").value;
+    //     contents = [content.toUpperCase(), content.toLowerCase(), content.toUpperCase()];
+    // }
+    // console.log(contents);
+
+    //calls interval function on particular time 
     myinterval = setInterval(function() {
         if (count < contents.length - 1) {
             count++;
