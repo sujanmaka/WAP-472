@@ -44,7 +44,7 @@ export function start(val) {
         } else {
             count = 0;
         }
-        displayHello(contents, count);
+        displayAnimation(contents, count);
     }, speed);
 };
 
@@ -60,7 +60,7 @@ export function stop() {
 }
 
 //repetitive action to display the content of array as animation
-function displayHello(myArray, count) {
+function displayAnimation(myArray, count) {
     if (myArray.length > 0) {
         document.getElementById("screen").innerHTML = myArray[count];
     }
@@ -69,11 +69,7 @@ function displayHello(myArray, count) {
 
 export function checkboxAction() {
     clearInterval(myinterval);
-    if (document.getElementById("speed").checked) {
-        speed = 50;
-    } else {
-        speed = 250;
-    }
+    speed = document.getElementById("speed").checked ? 50 : 250;
     start(speed);
 }
 
