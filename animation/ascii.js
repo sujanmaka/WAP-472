@@ -56,13 +56,13 @@ export function stop() {
     clearInterval(myinterval);
     var selectedItem = document.getElementById('item');
     var item = selectedItem.options[selectedItem.selectedIndex].value;
-    document.getElementById("screen").innerHTML = ANIMATIONS[item];
+    document.getElementById("screen").value = ANIMATIONS[item];
 }
 
 //repetitive action to display the content of array as animation
 function displayAnimation(myArray, count) {
     if (myArray.length > 0) {
-        document.getElementById("screen").innerHTML = myArray[count];
+        document.getElementById("screen").value = myArray[count];
     }
 }
 
