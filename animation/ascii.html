@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="ascii.css">
     <!-- <script type="module" src="ascii.js"></script> -->
     <script type="module">
-        import { start, stop } from "./ascii.js"; window.startFromModule = start; window.stopFromModule = stop;
+        import { start, stop, checkboxAction, itemSelectAction } from "./ascii.js"; window.startFromModule = start; window.stopFromModule = stop; window.checkboxFromModule = checkboxAction, window.itemSelectFromModule = itemSelectAction;
     </script>
 
     <title>ASCIImation</title>
@@ -26,11 +26,11 @@
         </fieldset>
         <fieldset class="field-set">
             <legend>Animation:</legend>
-            <select id="item">
-                  <option value="BLANK">Blank</option>
+            <select id="item" onchange="itemSelectFromModule()">
+                  <option value="BLANK" selected>Blank</option>
                   <option value="EXERCISE">Exercise</option>
                   <option value="JUGGLER">Juggler</option>
-                  <option value="BIKE" selected>Bike</option>
+                  <option value="BIKE">Bike</option>
                   <option value="DIVE">Dive</option>
                   <option value="CUSTOM">Custom</option>
             </select>
@@ -48,7 +48,7 @@
         </fieldset>
         <fieldset class="field-set">
             <legend>Speed:</legend>
-            <label><input id="speed" type="checkbox" name="speed">Turbo</label>
+            <label><input id="speed" type="checkbox" name="speed" onchange="checkboxFromModule()">Turbo</label>
         </fieldset>
     </div>
     <div class="validator">
