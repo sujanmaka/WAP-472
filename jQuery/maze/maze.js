@@ -14,7 +14,7 @@ $(document).ready(function() {
 $(function() {
     $("#start").mouseenter(function() {
         $(".boundary").css("backgroundColor", "#eeeeee");
-        $("#status").text("Game started, move to end");
+        $("#status").text("Game started, drag to end without touching border");
         start = true;
     });
 });
@@ -22,9 +22,7 @@ $(function() {
 $(function() {
     $("#end").mouseenter(function() {
         if (start) {
-            if (!isWallTouched) {
-                $("#status").text("You Win! :)");
-            }
+            $("#status").text("You Win! :)");
             start = false;
         }
     });
