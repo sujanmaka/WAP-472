@@ -79,7 +79,7 @@ function moveTile(tile, vacantX, vacantY, tempX, tempY) {
         "left": x + 'px',
         "top": y + 'px',
         "backgroundImage": 'url("background.jpg")',
-        "backgroundPosition": -x + 'px ' + (-y) + 'px'
+        // "backgroundPosition": -x + 'px ' + (-y) + 'px'
     });
 
     $(tile).attr("id", "square_" + vacantX + "_" + vacantY);
